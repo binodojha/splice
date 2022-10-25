@@ -27,18 +27,23 @@
             <div class="steps_progress">
                 <p class="first">1</p>
                 <p class="second">Basic Information</p>
-                <hr>
+                <div class="hr-first">
+                    <hr>
+                </div>
+
             </div>
             <div class="steps_progress">
                 <p class="first">2</p>
                 <p class="second">Basic Information</p>
-                <!-- <hr> -->
+                <div class="hr-second">
+                    <hr>
+                </div>
             </div>
 
-            <!-- <div class="steps_progress">
+            <div class="steps_progress">
                 <p class="first">3</p>
-                <p class="second"> Last</p>
-            </div> -->
+                <p class="second">Basic Information</p>
+            </div>
         </div>
 
         <h3>Step:1 Basic Information</h3>
@@ -72,16 +77,18 @@
                 
                 <div class="house_design_items1">
                     <label for="email">Email:<span>*</span></label>
-                    <input class="new_house_design_input" type="email" id="email" placeholder="Longitude, Latitude" required>
+                    <input class="new_house_design_input" type="email" id="email" required>
                 </div>
                 
                 <div class="house_design_items1">
                     <label for="coordinate">Coordinate:<span>*</span></label>
-                    <input class="new_house_design_input" type="text" id="coordinate" required>
+                    <input class="new_house_design_input" type="text" id="coordinate" placeholder="Longitude, Latitude" required>
                 </div>
             </form>
+            <div id="googleMap">
+                
+            </div>
         </section>
-
         <a href=""><button>Next</button></a>
     </section>
 
@@ -98,5 +105,11 @@
         <p>&COPY; 2022 Splice Consult Pvt. Ltd. All rights reserved</p>
     </footer>
 
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxUgoU2yCTisHZAbdjkR7ee6wKWYDOFZ0&libraries=places" async></script> -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxUgoU2yCTisHZAbdjkR7ee6wKWYDOFZ0&callback=initMap&libraries=&v=weekly" async>
+    </script>
+
+    <script src="map.js"></script>
 </body>
 </html>

@@ -328,12 +328,28 @@ input {
     text-align: center;
 }
 
-.house_design_main_container  hr{
-    border: 2px solid green;
+.house_design_main_container .hr-first hr{
+    border: 2px solid gray;
     position: relative;
     width: 170px;
     left: 113px;
     margin-top: -40px;
     color: green;
     /* margin-left: 50px; */
+}
+
+.house_design_main_container .hr-second hr{
+    border: 2px solid gray;
+    position: relative;
+    width: 170px;
+    left: 113px;
+    margin-top: -40px;
+    /* margin-left: 50px; */
+}
+
+/* Google Map */
+#googleMap{
+    border: 2px solid red;
+    width: 100%;
+    height: 500px;
 }
