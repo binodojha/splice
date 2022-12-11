@@ -1,42 +1,24 @@
+let mapOptions = {
+  center:[28.704996, 80.588859],
+  zoom:10
+}
 
-    // set map options
-    // var mylatLng = { lat:28.397362, lng:84.12576};
-    
-    // var mapOptions = {
-    //     center: mylatLng,
-    //     zoom:7,
-    //     mapTypeId: google.maps.MapTypeId.ROADMAP
-    // };
-    
-    // // // create map
-    // var map = new google.maps.Map(document.getElementById("googleMap"));
+let map = new L.map('map' , mapOptions);
+
+let layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+map.addLayer(layer);
 
 
-function initMap() {
-    var uluru = {lat:27.700001, lng:85.333336};
-    var map = new google.maps.Map(document.getElementById('googleMap'), {
-      zoom: 10,
-      center: uluru
-    });
-    var marker = new google.maps.Marker({
-      position: uluru,
-      map: map
-    });
+let marker = null;
+map.on('click', (event)=> {
+
+  if(marker !== null){
+      map.removeLayer(marker);
   }
 
+  marker = L.marker([event.latlng.lat , event.latlng.lng]).addTo(map);
 
-//   function () {
-              
-//     var CustomOp = {
-//         center:new google.maps.LatLng(
-//                 28.502212, 77.405603), 
-//         zoom:17, 
-//         mapTypeId:google.maps.MapTypeId.ROADMAP
-//     };
-      
-//     // Map object
-//     var map = new google.maps.Map(
-//         document.getElementById("googleMap"),
-//         CustomOp
-//     );
-// }
+  document.getElementById('latitude').value = event.latlng.lat;
+  document.getElementById('longitude').value = event.latlng.lng;
+  
+})

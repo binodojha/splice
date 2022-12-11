@@ -19,7 +19,7 @@ button,
 ul,
 ul li,
 a,
-input {
+input, select {
     font-size: 100%;
 }
 
@@ -237,17 +237,18 @@ input {
 }
 
 /* New House Design Services Page-1 CSS*/
-.house_design_main_container h3{
+.house_design1_main_container h3{
     margin-bottom: 30px;
     
 }
 
-.house_design_main_container{
+.house_design1_main_container{
     /* flex-direction: column; */
     text-align: center;
     border: 2px solid rgb(226, 125, 10);
     /* width: 100%; */
     /* background: radial-gradient(rgb(223, 164, 164), rgb(167, 223, 167)); */
+    background-color: #e9e2e2;
     /* border-radius: 10px; */
     /* margin-top: 20px; */
     /* margin-bottom: 56px; */
@@ -255,12 +256,12 @@ input {
   
 }
 
-.house_design_main_container label{
+.house_design1_main_container label{
     display: block; 
     
 }
 
-.house_design_main_container input {
+.house_design1_main_container input {
     width: 50%;
     line-height: 30px;
     border: 1px solid black;
@@ -268,7 +269,7 @@ input {
     margin-bottom: 20px;
 }
 
-.house_design_main_container button{
+.house_design1_main_container button{
     margin: 20px 0;
     font-size: 1.15rem;
     padding: 5px 10px;
@@ -279,7 +280,7 @@ input {
     cursor: pointer;
 }
 
-.house_design_sub_container{
+.house_design1_sub_container{
     border: 2px solid slateblue;
     width: 55%;
     padding: 10px 10px;
@@ -289,46 +290,45 @@ input {
     /* justify-content: space-between; */
 } 
 
-.house_design_sub_container .house_design_items1 span{
-    color: red;
+.house_design1_sub_container .house_design1_items1 span{
+    color:  red;
 }
 
-.house_design_items1{
+.house_design1_items1{
     display: flex;
     justify-content: space-between;
 }
-
-.house_design_main_container a{
-    /* display: block; */
+.house_design1_items1 .coordinate{
+    display: flex;
 }
 
-.house_design_main_container .new_house_design_input{
+.house_design1_main_container .new_house_design_input{
    
 }
 
-.house_design_main_container .steps_progress p{
+.house_design1_main_container .steps_progress p{
     /* display: inline; */
     /* border: 1px solid red; */
     text-align: center;
     margin: auto;
 }
 
-.house_design_main_container .steps_progress .first{
+.house_design1_main_container .steps_progress .first{
     width: 30px;
     background-color: green;
     border-radius: 5px;
 }
 
-.house_design_main_container .steps_progress .second{
+.house_design1_main_container .steps_progress .second{
     margin-right: 20px;
 }
 
-.house_design_main_container .steps_progress1{
+.house_design1_main_container .steps_progress1{
     display: flex;
     text-align: center;
 }
 
-.house_design_main_container .hr-first hr{
+.house_design1_main_container .hr-first hr{
     border: 2px solid gray;
     position: relative;
     width: 170px;
@@ -338,7 +338,7 @@ input {
     /* margin-left: 50px; */
 }
 
-.house_design_main_container .hr-second hr{
+.house_design1_main_container .hr-second hr{
     border: 2px solid gray;
     position: relative;
     width: 170px;
@@ -348,8 +348,96 @@ input {
 }
 
 /* Google Map */
-#googleMap{
+#map{
     border: 2px solid red;
     width: 100%;
     height: 500px;
+    border-radius: 10px;
 }
+
+/* Services Page--- House Design Page-2 CSS */
+
+.house_design2_main_container{
+    /* height: 100vh; */
+    border: 2px solid saddlebrown;
+}
+
+.house_design2_main_container h3{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.house_design2_sub_container{
+    /* border: 2px solid rebeccapurple; */
+    width: 60%;
+    display: block;
+    margin: auto;
+    /* height: 100vh; */
+}
+
+.house_design2_main_container .questions_box{
+    padding: 1px 10px;
+    /* border: 2px solid green; */
+    border-radius: 10px;
+    background-color: rgb(225 225 225);
+    margin-bottom: 20px;
+}
+
+.house_design2_main_container .questions_box >label{
+    display: block;
+    line-height: 50px;
+}
+
+.house_design2_main_container .questions_box input{
+    margin-bottom: 25px;
+}
+
+.house_design2_main_container .questions_box p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.house_design2_main_container .questions_box .upload_file{
+    /* padding: 5px 5px;
+    margin-bottom: 20px;
+    border: none; */
+    background: green;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* .house_design2_main_container .questions_box .directions_checkbox_container label{
+    margin-left: 8px;
+} */
+
+.house_design2_main_container .questions_box select{
+    padding-top: 2px;
+    /* height: 27px; */
+    font-size: 90%;
+}
+
+/* .house_design2_main_container .questions_box .house_area_container label{
+    margin-left: 8px;
+} */
+
+.house_design2_main_container .questions_box .label_inline label{
+    margin-left: 8px;
+}
+
+.house_design2_main_container button{
+    margin: 20px 450px;
+    font-size: 1.15rem;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+}
+
+
+
+
+
+

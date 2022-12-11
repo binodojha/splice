@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splice - Make Your Dreams Come True</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <a href="index.html"><img src="img/splice.png" alt="Splice Consultancy"></a>
+            <ul class="navbar_menu">
+                <li><a href="index.html" class="navbar_items">Home</a></li>
+                <li><a href="servicesPage.html" class="navbar_items">Services</a></li>
+                <li><a href="" class="navbar_items">Blogs</a></li>
+                <li><a href="" class="navbar_items">About Us</a></li>
+                <li><a href="" class="navbar_items">Contact Us</a></li>
+            </ul>
+            <a href=""><button>Login</button></a>
+        </nav>
+    </header>
+
+    <section class="house_design2_main_container">
+        <h3>Step-2: House Design Information</h3>
+
+        <div class="house_design2_sub_container">
+            <form action="">
+                <div class="questions_box">
+                    <label for="question1">घर बनाउन खोज्नु भाको जग्गाको क्षेत्रफल कति छ ?</label>
+                    <div class="questions1">
+                        <input type="text" id="question1" required>
+                        <select name="" id="">
+                            <option value="sq.ft">Sq.ft</option>
+                            <option value="sq.ft">Sq.m</option>
+                            <option value="sq.ft">Sq.ft</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="questions_box">
+                    <label for="question2">अगाडीबाट जग्गा मोहोडा कति छ ?</label>
+                    <input type="text" id="question2" required>
+                </div>
+
+                <div class="questions_box">
+                    <label for="question3">तपाइको जग्गामा बाटो जग्गाको कुन दिशा तिर छ ? (दूई तिर बाटो भए २ दिशामा टिक
+                        लगाउनु होला )</label>
+                    <div class="directions_checkbox_container label_inline">
+                        <input type="checkbox" id="direction1" required>
+                        <label for="direction1">पूर्व</label>
+                    </div>
+                    <div class="directions_checkbox_container label_inline">
+                        <input type="checkbox" id="direction2" required>
+                        <label for="direction2">पश्चिम</label>
+                    </div>
+                    <div class="directions_checkbox_container label_inline">
+                        <input type="checkbox" id="direction3" required>
+                        <label for="direction3">उत्तर</label>
+                    </div>
+                    <div class="directions_checkbox_container label_inline">
+                        <input type="checkbox" id="direction4" required>
+                        <label for="direction4">दक्षिण</label>
+                    </div>
+                </div>
+
+                <div class="questions_box">
+                    <p class="question4">तपाइले कस्तो नक्सा बनाउन चाहनु भएको छ ? यदी कुनै चित्र नक्सा छ भन्ने यहाँ
+                        Upload गर्नु होला | (सबैभन्दा पहिला आफ्नो कापीमा आफुले चाहेको जस्तै नक्सा कोर्नुहोला, त्यसपछि
+                        आफ्नो मोबोइलबाट फोटो खिची तल Add File लेखिएको ठाउमा click गरि Upload गर्नु होला | )</p>
+                    <input class="upload_file" type="file" id="myFile" name="filename">
+                </div>
+
+                <div class="questions_box">
+                    <label for="question5">घरलाई कति Sq. Feet सम्म बनाउन चाहनुहुन्छ ?</label>
+
+                    <div class="house_area_container label_inline">
+                        <input type="radio" name="house_area" id="small_house">
+                        <label for="small_house">५००-८०० (Sq. Feet) सम्म (सानो राम्रो घर )</label>
+                    </div>
+                    <div class="house_area_container label_inline">
+                        <input type="radio" name="house_area" id="medium_house">
+                        <label for="medium_house">८००-१००० (Sq. Feet) सम्म (मध्यम घर )</label>
+                    </div>
+
+                    <div class="house_area_container label_inline">
+                        <input type="radio" name="house_area" id="big_house">
+                        <label for="big_house">१०००-१३०० (Sq. Feet) सम्म (ठुलो घर )</label>
+                    </div>
+                    <div class="house_area_container label_inline">
+                        <input type="radio" name="house_area" id="custom_house">
+                        <label for="custom_house">अन्य</label>
+                        <input type="text">
+
+                    </div>
+                </div>
+
+                <div class="questions_box">
+                    <label for="question6">तपाई आफ्नो घर कति तलाको बनाउन चाहनु हुन्छ ?</label>
+                </div>
+
+                <div class="questions_box">
+                    <label for="question7">तपाई आफ्नो घर बनिसकेपछि कुन रुपमा प्रयोग गर्नु हुन्छ ?</label>
+                    <div class="label_inline house_use">
+
+                    </div>
+                    <div class="label_inline house_use">
+                        <input type="radio" name="house_use_option" id="house_use_option1" required>
+                        <label for="house_use_option1">आफ्नो र आफ्नो परिबारको लागि मात्र</label>
+                    </div>
+                    <div class="label_inline house_use">
+                        <input type="radio" name="house_use_option" id="house_use_option2" required>
+                        <label for="house_use_option2">पुरा घर भाडामा दिन्छु</label>
+                    </div>
+                    <div class="label_inline house_use">
+                        <input type="radio" name="house_use_option" id="house_use_option3" required>
+                        <label for="house_use_option3">आफ्नो लागि  र भाडाको लागि पनि</label>
+                    </div>
+                    <div class="label_inline house_use">
+                        <input type="radio" name="house_use_option" id="house_use_option" required>
+                        <label for="house_use_option">व्यापारको लागि आफ्नो लागि</label>
+                    </div>
+                </div>
+
+                <div class="questions_box">
+                    <label for="question8">तपाई आफ्नो घर कति तलाको बनाउन चाहनु हुन्छ ?</label>
+                </div>
+                <div class="questions_box">
+                    <label for="question9">तपाई आफ्नो घरको भुईतलामा  कति  Bedroom  भएको बनाउन चाहनु हुन्छ ?</label>
+                </div>
+                <div class="questions_box">
+                    <label for="question10">तपाई Attach toilet/bathroom भएको  कति कोठा बनाउन चाहनु हुन्छ ?</label>
+                    <div class="label_inline total_toilet_bathroom">
+                        <input type="radio" name="toilet/bathroom" id="toilet/bathroom_option1">
+                        <label for="toilet/bathroom_option1">एक कोठामा मात्र</label>
+                    </div>
+                    <div class="label_inline total_toilet_bathroom">
+                        <input type="radio" name="toilet/bathroom" id="toilet/bathroom_option2">
+                        <label for="toilet/bathroom_option2">दूई कोठामा</label>                       
+                    </div>
+                    <div class="label_inline total_toilet_bathroom">
+                        <input type="radio" name="toilet/bathroom" id="toilet/bathroom_option3">
+                        <label for="toilet/bathroom_option3">सबै कोठामा</label>                      
+                    </div>
+                    <div class="label_inline total_toilet_bathroom">
+                        <input type="radio" name="toilet/bathroom" id="toilet/bathroom_option4">
+                        <label for="toilet/bathroom_option4">कुनै कोठामा चाहिदैन</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <a href="documentUploadPage.html"><button>Next</button></a>
+
+    </section>
+
+    <footer class="footer_container">
+        <div class="footer_content">
+            <img src="img/splice.png" alt="Splice Consultancy">
+            <ul class="footer_items">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms & Conditions</a></li>
+                <li><a href="">Help</a></li>
+            </ul>
+        </div>
+        <p>&COPY; 2022 Splice Consult Pvt. Ltd. All rights reserved</p>
+    </footer>
+
+
+</body>
+
+</html>
